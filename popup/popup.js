@@ -1,17 +1,12 @@
 // popup.js
-window.onload = function() {
-    document.getElementById("button").onclick = function() {
-        chrome.extension.sendMessage({
-            type: "color-divs"
-        });
-    }
+$(function(){
+    console.log('popup');
+    
+    $(".funnyPic").click(function(){
+        console.log("clicked");
+        var url = "www.blah.com/funnyPic" + $(this).attr("index");
+        $("#picUrl").val(url);
 
-    document.getElementById("image1").onclick = function() {
-        /*
-        chrome.extension.sendMessage({
-            type: "image-clicked"
-        });
-        */
-        document.getElementById("image1_url").select();
-    }
-}
+
+    });
+});
