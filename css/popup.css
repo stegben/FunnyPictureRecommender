@@ -1,0 +1,46 @@
+html, body {
+
+  width: 350px;
+  height: 350px;
+
+}
+
+.carousal {
+
+  width: 350px;
+  overflow: hidden;
+  font-size: 0;
+
+}
+
+.gallery, .preview {
+
+  display: inline-block;
+
+}
+
+.gallery {
+
+  width: 350px;  
+
+}
+
+.preview {
+
+  width: auto;
+
+}
+
+img {
+
+  display: inline-block;
+
+}
+
+img.funnyPic {
+
+  cursor: pointer;
+  width: 100px;
+  height: auto;
+
+}
